@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Smoke test cases</td><td class="numi">15</td><td class="numi">15</td><td class="numi_attn">1</td><td class="numi_attn">3</td><td class="numi">16.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Smoke test cases &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">PackTwo.DependencyAnnot<td><a href="#m1"><b>OpeningBrowser</b>  </a></td><td class="numi">1</td><td class="numi">5082</td></tr>
+<tr class="failedeven"><td rowspan="1">PackTwo.TestBaseClass<td><a href="#m2"><b>Login</b>  </a></td><td class="numi">1</td><td class="numi">5525</td></tr>
+<tr class="failedodd"><td rowspan="1">PackTwo.DependencyAnnot<td><a href="#m3"><b>Login</b>  </a></td><td class="numi">1</td><td class="numi">5584</td></tr>
+<tr><th colspan="4">Smoke test cases &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">PackTwo.DependencyAnnot<td><a href="#m4"><b>FlightBooking</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Smoke test cases &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">PackTwo.Annotations<td><a href="#m5"><b>FlightCancel</b> (Priority2) </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">testngFiles2.DependencyAnnot<td><a href="#m6"><b>HomePage</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">PackTwo.DependencyAnnot<td><a href="#m7"><b>CreditCardPayment</b>  </a></td><td class="numi">1</td><td class="numi">13</td></tr>
+<tr class="passedeven"><td rowspan="1">testngFiles2.DependencyAnnot<td><a href="#m8"><b>LogiPage</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">PackTwo.Annotations<td><a href="#m9"><b>AOpeningBrowser</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">testngFiles2.DependencyAnnot<td><a href="#m10"><b>OpeningBrowser</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">PackTwo.Annotations<td><a href="#m11"><b>FlightBooking</b> (Priority1) </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">testngFiles2.Annot2<td><a href="#m12"><b>CodechangecheckJenkin</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="2">testngFiles2.DependencyAnnot<td><a href="#m13"><b>CreditCardPayment</b>  </a></td><td class="numi">1</td><td class="numi">58</td></tr><tr class="passedodd"><td><a href="#m14"><b>FlightBooking</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">PackTwo.DependencyAnnot<td><a href="#m15"><b>LogiPage</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m16"><b>HomePage</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="2">testngFiles2.Annotations<td><a href="#m17"><b>FlightBooking</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m18"><b>AOpeningBrowser</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">testngFiles2.Annot2<td><a href="#m19"><b>NewTestForJenkin</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+</table>
+<h1>Smoke test cases</h1>
+<a id="m1"></a><h2>PackTwo.DependencyAnnot:OpeningBrowser</h2>
+<div style="padding-left:3em">
+<p>Unable to create new remote session. desired capabilities = Capabilities [{moz:firefoxOptions={binary=Optional.empty, args=[], legacy=null, logLevel=null, prefs={}, profile=null}}], required capabilities = Capabilities [{moz:firefoxOptions={binary=Optional.empty, args=[], legacy=null, logLevel=null, prefs={}, profile=null}}]
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b32&apos;, time: &apos;2017-03-10 09:04:52 -0800&apos;
+System info: host: &apos;LAPTOP-U6N7CFLI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:121)
+<br/>at PackTwo.TestBaseClass.Login(TestBaseClass.java:34)
+<br/>at PackTwo.DependencyAnnot.OpeningBrowser(DependencyAnnot.java:11)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>PackTwo.TestBaseClass:Login</h2>
+<div style="padding-left:3em">
+<p>Unable to create new remote session. desired capabilities = Capabilities [{moz:firefoxOptions={binary=Optional.empty, args=[], legacy=null, logLevel=null, prefs={}, profile=null}}], required capabilities = Capabilities [{moz:firefoxOptions={binary=Optional.empty, args=[], legacy=null, logLevel=null, prefs={}, profile=null}}]
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b32&apos;, time: &apos;2017-03-10 09:04:52 -0800&apos;
+System info: host: &apos;LAPTOP-U6N7CFLI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:121)
+<br/>at PackTwo.TestBaseClass.Login(TestBaseClass.java:34)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>PackTwo.DependencyAnnot:Login</h2>
+<div style="padding-left:3em">
+<p>Unable to create new remote session. desired capabilities = Capabilities [{moz:firefoxOptions={binary=Optional.empty, args=[], legacy=null, logLevel=null, prefs={}, profile=null}}], required capabilities = Capabilities [{moz:firefoxOptions={binary=Optional.empty, args=[], legacy=null, logLevel=null, prefs={}, profile=null}}]
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b32&apos;, time: &apos;2017-03-10 09:04:52 -0800&apos;
+System info: host: &apos;LAPTOP-U6N7CFLI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:121)
+<br/>at PackTwo.TestBaseClass.Login(TestBaseClass.java:34)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:749)
+<br/>at org.testng.TestRunner.run(TestRunner.java:600)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+<br/>at org.testng.TestNG.run(TestNG.java:900)
+<br/>at org.testng.TestNG.privateMain(TestNG.java:1182)
+<br/>at org.testng.TestNG.main(TestNG.java:1146)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>PackTwo.DependencyAnnot:FlightBooking</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>PackTwo.Annotations:FlightCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>testngFiles2.DependencyAnnot:HomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>PackTwo.DependencyAnnot:CreditCardPayment</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>testngFiles2.DependencyAnnot:LogiPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>PackTwo.Annotations:AOpeningBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>testngFiles2.DependencyAnnot:OpeningBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>PackTwo.Annotations:FlightBooking</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>testngFiles2.Annot2:CodechangecheckJenkin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>testngFiles2.DependencyAnnot:CreditCardPayment</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>testngFiles2.DependencyAnnot:FlightBooking</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>PackTwo.DependencyAnnot:LogiPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>PackTwo.DependencyAnnot:HomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>testngFiles2.Annotations:FlightBooking</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>testngFiles2.Annotations:AOpeningBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>testngFiles2.Annot2:NewTestForJenkin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

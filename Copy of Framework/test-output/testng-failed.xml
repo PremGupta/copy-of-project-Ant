@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation testing]">
+  <test name="Smoke test cases(failed)" preserve-order="false">
+    <classes>
+      <class name="PackTwo.Annot2">
+        <methods>
+          <include name="installSoftware"/>
+          <include name="deinstallSoftware"/>
+        </methods>
+      </class>
+      <class name="testngFiles2.Annot2">
+        <methods>
+          <include name="installSoftware"/>
+          <include name="deinstallSoftware"/>
+        </methods>
+      </class>
+      <class name="testngFiles2.Annotations">
+        <methods>
+          <include name="UseridGeneration"/>
+          <include name="BrowserClose"/>
+          <include name="CookiesClose"/>
+          <include name="Cookies"/>
+        </methods>
+      </class>
+      <class name="PackTwo.Annotations">
+        <methods>
+          <include name="BrowserClose"/>
+          <include name="CookiesClose"/>
+          <include name="Cookies"/>
+          <include name="UseridGeneration"/>
+        </methods>
+      </class>
+      <class name="PackTwo.TestBaseClass">
+        <methods>
+          <include name="Login"/>
+          <include name="deinstallSoftware"/>
+        </methods>
+      </class>
+      <class name="PackTwo.DependencyAnnot">
+        <methods>
+          <include name="OpeningBrowser"/>
+          <include name="Login"/>
+          <include name="FlightBooking"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

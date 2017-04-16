@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<suite name= "Automation testing">
+       <test name= "Smoke test cases">
+             <groups>
+                      <run>
+                      <include name="Priority1"/>
+                      </run>
+             </groups>
+             
+                 <classes>
+                      <class name="PackTwo.Annotations">
+                      </class>
+                       
+                      <class name="testngFiles.Annotations"/>
+             </classes>
+       </test>
+</suite>	

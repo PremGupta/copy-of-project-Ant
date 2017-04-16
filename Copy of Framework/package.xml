@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<suite name= "Automation testing">
+       <test name= "Smoke test cases">
+             <packages>
+                      <package name="testngFiles2"/>
+                    <!--  <package name="PackTwo"/> -->
+             </packages>
+       </test>
+</suite>	
